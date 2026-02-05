@@ -5,8 +5,8 @@ import { redirect } from "next/navigation";
 const client = new S3Client({
     region: "ap-south-1",
     credentials: {
-        accessKeyId: "AKIA6GBMDO6PFORHRRM2",
-        secretAccessKey: "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",
+        accessKeyId: process.env.ACCESS_KEY_ID,
+        secretAccessKey: process.env.SECRET_ACCESS_KEY,
     }
 });
 
